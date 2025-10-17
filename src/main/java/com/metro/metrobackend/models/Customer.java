@@ -20,22 +20,22 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customerId;
 
-    @JsonProperty("full_name")
+//    @JsonProperty("full_name")
     @Column(name = "full_name", nullable = false)
     private String fullName;
 
-    @JsonProperty("email_id")
+//    @JsonProperty("email_id")
     @Column(name = "email_id", nullable = false, unique = true)
     private String emailId;
 
-    @JsonProperty("phone_number")
+//    @JsonProperty("phone_number")
     @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
 
     @Column(name = "address")
     private String address;
 
-    @JsonProperty("aadhar_number")
+//    @JsonProperty("aadhar_number")
     @Column(name = "aadhar_number", nullable = false, unique = true, length = 12)
     private String aadharNumber;
 
