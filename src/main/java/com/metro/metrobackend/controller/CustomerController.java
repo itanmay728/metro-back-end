@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.metro.metrobackend.models.Customer;
-import com.metro.metrobackend.services.impl.CustomerServiceImpl;
+import com.metro.metrobackend.services.CustomerService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
 public class CustomerController {
 	
 	@Autowired
-	private CustomerServiceImpl customerServiceImpl;
+	private CustomerService customerService;
 
 	@PostMapping("/addcustomer")
 	public ResponseEntity<?> addCustomer(@RequestBody Customer customers) {
 		
-		ResponseEntity result = customerServiceImpl.saveNewCustomers(customers);
+		ResponseEntity result = customerService.saveNewCustomers(customers);
 		
 		return result;
 		
