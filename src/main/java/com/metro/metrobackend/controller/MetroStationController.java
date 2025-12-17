@@ -9,8 +9,7 @@ import com.metro.metrobackend.models.MetroStation;
 import com.metro.metrobackend.services.MetroStationService;
 
 @RestController
-@RequestMapping("/api/metro")
-@CrossOrigin(origins = "*")
+@RequestMapping("/api/public/metro")
 public class MetroStationController {
 
     private final MetroStationService metroStationService;
