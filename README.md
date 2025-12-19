@@ -2,10 +2,11 @@
 
 1. **Demo video Link**
     ```bash
+       https://youtu.be/qZ2KeRwpgwY
 
-2. **Metro back-end**
+2. **Metro Front-end**
     ```bash
-      https://github.com/itanmay728/metro-back-end
+      https://github.com/itanmay728/metro-front-end
 
 <p align="center">
   A responsive single-page Application of <a>Delhi metro</a>, 
